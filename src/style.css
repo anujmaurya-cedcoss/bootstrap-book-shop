@@ -1,0 +1,33 @@
+/* CSS for navbar */
+.navbar__favicon {
+    height: 75px;
+}
+.navbar__left {
+    display: flex;
+    float: right;
+}
+.navbar-nav{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+nav {
+    width: 100%;
+}
+.navbar__cart-icon {
+    height: 40px;
+}
+.rounded-pill {
+    width: 150px;
+    height: 55px;
+}
+/* CSS for banner */
+.banner {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar__list {
+    background-color: #fef4f4;
+}
