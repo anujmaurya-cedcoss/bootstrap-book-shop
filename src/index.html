@@ -11,6 +11,7 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -19,60 +20,67 @@
   </head>
   <body>
     <!-- title with search -->
-    <div class = "navbar d-flex ">
+    <div class="navbar d-flex">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <div class="d-flex">
+                <img
+                  src="./images/store.png"
+                  alt="store"
+                  class="navbar__favicon pb-2 ml-3"
+                />
+                <a class="nav-link mt-3" href="#">ABC Books </a>
+              </div>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <div class="d-flex">
-              <img
-                src="./images/store.png"
-                alt="store"
-                class="navbar__favicon pb-2 ml-3"
-              />
-              <a class="nav-link mt-3" href="#">ABC Books </a>
+            <div class="col-md-5 mx-auto mt-2">
+              <div class="small fw-light"></div>
+              <div class="input-group">
+                <input
+                  class="form-control border-end-0 border rounded-pill"
+                  type="search"
+                  placeholder="search"
+                  id="example-search-input"
+                />
+              </div>
             </div>
-          </li>
+            <div class="navbar__left float-right d-flex">
+              <a class="nav-link mt-3" href="#">FAQs</a>
 
-          <div class="col-md-5 mx-auto mt-2">
-            <div class="small fw-light"></div>
-            <div class="input-group">
-              <input
-                class="form-control border-end-0 border rounded-pill"
-                type="search"
-                placeholder="search"
-                id="example-search-input"
-              />
-            </div>
-          </div>
-          <div class = "navbar__left float-right d-flex">
-                <a class="nav-link mt-3" href="#">FAQs</a>
-
-                <a class="nav-link disabled mt-3" href="#">Track Orders</a>
+              <a class="nav-link disabled mt-3" href="#">Track Orders</a>
               <!-- insert the cart image here -->
-              <img class = "navbar__cart-icon mt-3" src="./images/cart.png" alt="cart-image">
-    
+              <img
+                class="navbar__cart-icon mt-3"
+                src="./images/cart.png"
+                alt="cart-image"
+              />
+
               <!-- insert the signin button here -->
-              <button type="button" class="btn btn-danger rounded-pill mt-2 mr-5">Sign In</button>
-          </div>
-        </ul>
-      </div>
-    </nav>
-</div>
+              <button
+                type="button"
+                class="btn btn-danger rounded-pill navbar__signin mt-2 mr-5"
+              >
+                Sign In
+              </button>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </div>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button
@@ -88,7 +96,7 @@
       </button>
       <div class="navbar__list collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav list-inline justify-content-center">
-          <li class="nav-item ">
+          <li class="nav-item">
             <a class="nav-link" href="#">Home </a>
           </li>
           <li class="nav-item">
@@ -111,16 +119,21 @@
     </nav>
     <!-- banner -->
     <div class="banner">
-      <div class="card bg-dark text-white">
+      <div class="card text-white border-0">
         <img src="./images/first.jpg" alt="banner-image" class="banner" />
         <div class="card-img-overlay">
-          <h1 class="card-title centered">The History <br>of Philipino</h1>
-          <button class = "rounded-pill btn-danger">Browse Store</button>
-          <p class="card-text">
-            This is a wider card with supporting text below as a natural lead-in
-            to additional content. This content is a little bit longer.
-          </p>
-          <p class="card-text">Last updated 3 mins ago</p>
+          <button
+            type="button"
+            class="rounded-pill rounded-pill-small btn-light centered banner__button-centered p-2"
+          >
+            Science Fiction
+          </button>
+          <h1 class="card-title centered">The History <br />of Philipino</h1>
+          <button
+            class="rounded-pill btn-danger centered banner__button-centered p-2"
+          >
+            Browse Store
+          </button>
         </div>
       </div>
     </div>
@@ -131,77 +144,368 @@
         <div class="card">
           <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
           <div class="card-body">
-            <h5 class="card-title">The Great Indian Novel</h5>
-            <p class="card-text">Shashi Tharoor</p>
-            <!-- enter rating here -->
-            <!-- then enter price -->
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
           </div>
         </div>
 
         <div class="card">
           <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
           <div class="card-body">
-            <h5 class="card-title">The Great Indian Novel</h5>
-            <p class="card-text">Shashi Tharoor</p>
-            <!-- enter rating here -->
-            <!-- then enter price -->
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
           </div>
         </div>
 
         <div class="card">
           <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
           <div class="card-body">
-            <h5 class="card-title">The Great Indian Novel</h5>
-            <p class="card-text">Shashi Tharoor</p>
-            <!-- enter rating here -->
-            <!-- then enter price -->
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
           </div>
         </div>
 
         <div class="card">
           <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
           <div class="card-body">
-            <h5 class="card-title">The Great Indian Novel</h5>
-            <p class="card-text">Shashi Tharoor</p>
-            <!-- enter rating here -->
-            <!-- then enter price -->
-          </div>
-        </div>
-
-        <div class="card">
-          <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
-          <div class="card-body">
-            <h5 class="card-title">The Great Indian Novel</h5>
-            <p class="card-text">Shashi Tharoor</p>
-            <!-- enter rating here -->
-            <!-- then enter price -->
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- featured this weekend -->
-    <div class="weekendFeatured">
-      <h3>Featured this Week</h3>
-      <button>View All</button>
-      <div class="card">
-        <img
-          src="./images/novel2.jpg"
-          class="rounded float-left"
-          alt="novel-2"
-        />
-        <div class="card-body">
-          <h5 class="card-title">The Great Indian Novel</h5>
-          <p class="card-text">Shashi Tharoor</p>
-          <!-- enter rating here -->
-          <!-- then enter price -->
+
+    <!-- featured this week -->
+    <aside class="featuredThisWeek mt-5 ml-5">
+      <div class="row p-5">
+        <div class="col-8">
+          <div class="row">
+            <div class="col-10">
+              <h1>Featured This Week</h1>
+            </div>
+            <div class="col-2">
+              <button type="button" class="btn btn-light">View All</button>
+            </div>
+          </div>
+          <div class="row bg-danger p-5">
+            <div class="col-6">
+              <img
+                class="box-center"
+                src="./images/novel3.jpg"
+                alt="image"
+                width="90%"
+              />
+            </div>
+            <div class="col-6 p-5">
+              <h1 style="color: white">The Rage of Dragons</h1>
+              <p style="color: white">Author Name</p>
+              <h3 style="color: white">$50</h3>
+              <p style="color: white">ratings</p>
+              <button
+                class="rounded-pill bg-danger"
+                style="font-size: 30px; color: white; border-width: 1px"
+              >
+                View Detail
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <img
+            class="box-center pl-3"
+            src="./images/new_novel.jpg"
+            alt="image"
+            style="width: 85%"
+          />
         </div>
       </div>
-      <img src="./images/novel3.jpg" class="rounded float-right" alt="novel3" />
-    </div>
+    </aside>
+
     <!-- latest published items -->
+    <div class="latestPublished d">
+      <div class="latestPublished__header d-flex text-center ml-5">
+        <div class="latestPublished-left float-left ml-4">
+          <h3>Latest Published Items</h3>
+        </div>
+        <div class="latestPublished-right float-right d-flex">
+          <button type="button" class="btn btn-light">All</button>
+          <button type="button" class="btn btn-light">Horror</button>
+          <button type="button" class="btn btn-light">Thriller</button>
+          <button type="button" class="btn btn-light">Science Fiction</button>
+          <button type="button" class="btn btn-light">History</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bestSellers">
+      <div class="card-deck mt-3">
+        <div class="card">
+          <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
+          <div class="card-body">
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
+          <div class="card-body">
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
+          <div class="card-body">
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="./images/novel1.jpg" alt="Novel1" />
+          <div class="card-body">
+            <h5 class="card-title">The Indian</h5>
+            <p class="card-text">Author</p>
+            <div class="bestSellers__rating">
+              <!--  rating  -->
+              <p>rating</p>
+              <p>130 reviews</p>
+              <!--  enter  -->
+              <h5 class="bestSellers__rating-price" style="float: right">
+                $30
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 text-center">
+        <button class="rounded-pill btn-danger m-2 button-center">
+          Browse More
+        </button>
+      </div>
+    </div>
+
     <!-- 2 cards -->
+    <div class="card-group mx-5 my-5">
+      <div class="card mx-2 card-small">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp"
+          class="card-img-top card-img-top-small"
+          alt="Palm Springs Road"
+        />
+      </div>
+      <div class="card mx-2 card-small">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+          class="card-img-top card-img-top-small"
+          alt="Los Angeles Skyscrapers"
+        />
+      </div>
+    </div>
+
     <!-- newsletter signup -->
+    <div class = "newsletter mb-5">
+      <div class="card text-white border-0 newsletter__card">
+        <img src="./images/first.jpg" alt="banner-image" class="banner" />
+        <div class="card-img-overlay">
+          <section class="home-newsletter">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="single">
+                    <h2>Join Newsletter</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eum necessitatibus harum magni eius aliquam ad perferendis consequuntur! At ipsum illum, aliquam ratione ullam quibusdam blanditiis maiores voluptate harum temporibus.</p>
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                      />
+                      <span class="input-group-btn">
+                        <button
+                          class="btn btn-theme rounded-pill btn-danger"
+                          type="submit"
+                        >
+                          Subscribe
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- <div class="card bg-dark text-white">
+        <img class="card-img" src="./images/first.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Last updated 3 mins ago</p>
+        </div>
+      </div> -->
+      
+    </div>
+    
     <!-- footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 footer-info">
+              <h3>ABC Books</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Quaerat, alias molestiae fugit at quo est architecto, similique
+                quod autem magnam fugiat. Hic aut magni modi ratione
+                necessitatibus eos debitis velit.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="fab fa-instagram"></i></a>
+                <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Book Categories</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">History</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Horror Thriller</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Love Story</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Science Fiction</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Business</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-links mt-3 pt-3">
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Biography</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Astrology</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Digital Marketing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Software Development</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Ecommerce</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h4>Site Map</h4>
+              <div class="col-lg-3 col-md-6 footer-links">
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">FAQs</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Blog</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Contact</a>
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
